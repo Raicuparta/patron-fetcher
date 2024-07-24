@@ -1,0 +1,40 @@
+name: Update patrons list
+
+on:
+  workflow_dispatch: # Allows manual triggering of the workflow
+  schedule:
+    - cron: "0 * * * *" # Runs every hour
+
+jobs:
+  run-patreon-script:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: "3.x"
+
+      - name: Run Patreon script
+        run: |
+          python patreon.py --access-token ${{ secrets.PATREON_ACCESS_TOKEN }}
+
+      - name: Configure Git
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+
+      - name: Commit and push patrons.json
+        run: |
+          git add patrons.json
+          if ! git diff-index --quiet HEAD --; then
+            git commit -m "Update patrons list"
+            git push
+          else
+            echo "No changes to commit"
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
