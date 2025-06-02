@@ -2,33 +2,33 @@
   "activePatrons": [
     {
       "ranking": 1,
+      "name": "Travis McCoy",
+      "imageUrl": "https://c8.patreon.com/3/200/3222710"
+    },
+    {
+      "ranking": 2,
       "name": "Shahzeb Meghani",
       "imageUrl": "https://c10.patreonusercontent.com/4/patreon-media/p/user/5978300/aec9636a1b294fd48374aca8612765fd/eyJ3IjoyMDB9/1.jpeg?token-hash=cAJ618OXhpyi_tNwxQeqEDWXFbGmp-ffOlgNWlDvDD0%3D"
     },
     {
-      "ranking": 2,
+      "ranking": 3,
       "name": "maximilianpuetz",
       "imageUrl": "https://c10.patreonusercontent.com/4/patreon-media/p/user/3629283/c8f831bf3af5441c82b1a431b72e1b31/eyJ3IjoyMDB9/1.jpeg?token-hash=KWGELElWrHdWMI8VxRdSraZobOhmvMoEN8hYf4CMtlQ%3D"
     },
     {
-      "ranking": 3,
+      "ranking": 4,
       "name": "ShadowBrain",
       "imageUrl": "https://c10.patreonusercontent.com/4/patreon-media/p/user/520620/48b585a14b7d4ffb98a2e0a7f4a0fcc0/eyJ3IjoyMDB9/1.jpg?token-hash=oIKVOIT54hVcnkAkMn4i7Y9I6Q9HQXELNi4CcWXhLoU%3D"
     },
     {
-      "ranking": 4,
+      "ranking": 5,
       "name": "Jesse Clark",
       "imageUrl": "https://c8.patreon.com/3/200/653088"
     },
     {
-      "ranking": 5,
+      "ranking": 6,
       "name": "Michael Jones",
       "imageUrl": "https://c10.patreonusercontent.com/4/patreon-media/p/user/12507886/10acfea0b076466084837d6cbfc21d47/eyJ3IjoyMDB9/1.jpeg?token-hash=H59yzGHNiPUQJBXozYU0HxU4E3jAwHIkuSezo8fGxZI%3D"
-    },
-    {
-      "ranking": 6,
-      "name": "Travis McCoy",
-      "imageUrl": "https://c8.patreon.com/3/200/3222710"
     },
     {
       "ranking": 7,
@@ -97,43 +97,43 @@
     },
     {
       "ranking": 20,
-      "name": "Brant Clark",
-      "imageUrl": "https://c8.patreon.com/3/200/3323390"
-    },
-    {
-      "ranking": 21,
-      "name": "Michael DePalma",
-      "imageUrl": "https://c8.patreon.com/3/200/18250738"
-    },
-    {
-      "ranking": 22,
-      "name": "Danny Scarberry",
-      "imageUrl": "https://c8.patreon.com/3/200/10580843"
-    },
-    {
-      "ranking": 23,
-      "name": "Chris Nichols",
-      "imageUrl": "https://c10.patreonusercontent.com/4/patreon-media/p/user/547241/362861e5fed948e9b5211ce45fdeb8a7/eyJ3IjoyMDB9/2.jpg?token-hash=41b-NEaCxRo-0CfItE-PsU0mc_mfP1_0m5MDjSY9iio%3D"
-    },
-    {
-      "ranking": 24,
       "name": "Phrito",
       "imageUrl": "https://c10.patreonusercontent.com/4/patreon-media/p/user/9683843/fb1cadacacd14f078a3eae9c4f944f18/eyJ3IjoyMDB9/1.png?token-hash=HEDO8HLK0xupuK7kg6bbtKKLbp4yq94AQMYbOGtLpY0%3D"
     },
     {
-      "ranking": 25,
+      "ranking": 21,
       "name": "Kaleb Elias Pierotti",
       "imageUrl": "https://c8.patreon.com/3/200/941371"
     },
     {
+      "ranking": 22,
+      "name": "thirteenthman",
+      "imageUrl": "https://c10.patreonusercontent.com/4/patreon-media/p/user/44943/6f221c414f6a4739a20be8d2bc81f216/eyJ3IjoyMDB9/3.jpeg?token-hash=lxXlUJvKxNZsRt57mZl6jltp_uB0WUHKfs49qp3d8c4%3D"
+    },
+    {
+      "ranking": 23,
+      "name": "Brant Clark",
+      "imageUrl": "https://c8.patreon.com/3/200/3323390"
+    },
+    {
+      "ranking": 24,
+      "name": "Michael DePalma",
+      "imageUrl": "https://c8.patreon.com/3/200/18250738"
+    },
+    {
+      "ranking": 25,
+      "name": "Danny Scarberry",
+      "imageUrl": "https://c8.patreon.com/3/200/10580843"
+    },
+    {
       "ranking": 26,
-      "name": "Jonathan Sullivan",
-      "imageUrl": "https://c8.patreon.com/3/200/10332081"
+      "name": "Chris Nichols",
+      "imageUrl": "https://c10.patreonusercontent.com/4/patreon-media/p/user/547241/362861e5fed948e9b5211ce45fdeb8a7/eyJ3IjoyMDB9/2.jpg?token-hash=41b-NEaCxRo-0CfItE-PsU0mc_mfP1_0m5MDjSY9iio%3D"
     },
     {
       "ranking": 27,
-      "name": "thirteenthman",
-      "imageUrl": "https://c10.patreonusercontent.com/4/patreon-media/p/user/44943/6f221c414f6a4739a20be8d2bc81f216/eyJ3IjoyMDB9/3.jpeg?token-hash=lxXlUJvKxNZsRt57mZl6jltp_uB0WUHKfs49qp3d8c4%3D"
+      "name": "Jonathan Sullivan",
+      "imageUrl": "https://c8.patreon.com/3/200/10332081"
     },
     {
       "ranking": 28,
@@ -152,18 +152,18 @@
     },
     {
       "ranking": 31,
+      "name": "Brian Kaler",
+      "imageUrl": "https://c10.patreonusercontent.com/4/patreon-media/p/user/6081312/4795689600be4eb6b3d5e89efba25c9e/eyJ3IjoyMDB9/1.jpeg?token-hash=XbTvnqIdR4EOYw8pycocA4Y-YuI3OONVEXCqU4bhF8E%3D"
+    },
+    {
+      "ranking": 32,
       "name": "Daniel Nott",
       "imageUrl": "https://c8.patreon.com/3/200/12557328"
     },
     {
-      "ranking": 32,
+      "ranking": 33,
       "name": "Paul Millunzi",
       "imageUrl": "https://c8.patreon.com/3/200/11543236"
-    },
-    {
-      "ranking": 33,
-      "name": "Brian Kaler",
-      "imageUrl": "https://c10.patreonusercontent.com/4/patreon-media/p/user/6081312/4795689600be4eb6b3d5e89efba25c9e/eyJ3IjoyMDB9/1.jpeg?token-hash=XbTvnqIdR4EOYw8pycocA4Y-YuI3OONVEXCqU4bhF8E%3D"
     },
     {
       "ranking": 34,
