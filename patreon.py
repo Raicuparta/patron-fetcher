@@ -3,6 +3,9 @@ import urllib.request
 import urllib.error
 import argparse
 
+BASE_URL = "https://raicuparta.github.io/patron-fetcher/"
+FALLBACK_IMAGE_URL = BASE_URL + "fallback.png"
+
 
 def parse_args():
     parser = argparse.ArgumentParser(description='Patreon API Client')
@@ -45,12 +48,11 @@ def process_data(data):
         if data_attributes.get('patron_status') != 'active_patron':
             continue
 
-        if user_attributes.get('hide_pledges'):
-            continue
+        hidden = bool(user_attributes.get('hide_pledges'))
 
         patrons.append({
             "data": data_attributes,
-            "user": user_attributes
+            "user": None if hidden else user_attributes
         })
     return patrons
 
@@ -79,11 +81,17 @@ def main():
     patrons = fetch_all_patrons(base_url, args.access_token)
     sorted_patrons = sorted(
         patrons, key=lambda x: x['data']['campaign_lifetime_support_cents'], reverse=True)
+    named_patrons = [p for p in sorted_patrons if p['user'] is not None]
+    anonymous_patrons = [p for p in sorted_patrons if p['user'] is None]
     result = {"activePatrons": [{
         "ranking": i + 1,
         "name": p['user']['vanity'] or p['data']['full_name'],
-        "imageUrl": p['user']['thumb_url']
-    } for i, p in enumerate(sorted_patrons)]}
+        "imageUrl": p['user'].get('thumb_url') or FALLBACK_IMAGE_URL
+    } for i, p in enumerate(named_patrons)] + [{
+        "ranking": len(named_patrons) + i + 1,
+        "name": f"Anonymous #{i + 1}",
+        "imageUrl": FALLBACK_IMAGE_URL
+    } for i, _ in enumerate(anonymous_patrons)]}
     save_to_file("patrons.json", result)
     print("Patrons data saved to patrons.json")
 
